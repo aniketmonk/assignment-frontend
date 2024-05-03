@@ -1,0 +1,179 @@
+.Container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .TopRow {
+    flex: 0 0 auto;
+    text-align: center;
+  }
+  .BottomRow {
+    flex: 1 1 auto;
+  }
+  
+  .Panel {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .PanelContent {
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-panel-background);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    overflow-y: auto;
+  }
+  
+  .ResizeHandleOuter {
+    flex: 0 0 1.5em;
+    position: relative;
+    outline: none;
+  
+    --background-color: transparent;
+  }
+  .ResizeHandleOuter[data-resize-handle-active] {
+    --background-color: var(--color-solid-resize-bar-handle);
+  }
+  
+  .ResizeHandleInner {
+    position: absolute;
+    top: 0.25em;
+    bottom: 0.25em;
+    left: 0.25em;
+    right: 0.25em;
+    border-radius: 0.25em;
+    background-color: var(--background-color);
+    transition: background-color 0.2s linear;
+  }
+  
+  .Button {
+    color: var(--color-default);
+    background-color: var(--color-button-background);
+    border: 1px solid var(--color-button-border);
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+  }
+  .Button:hover {
+    background-color: var(--color-button-background-hover);
+  }
+  
+  .Link {
+    display: block;
+    color: var(--color-link);
+    margin-bottom: 0.5rem;
+  }
+  
+  .Icon {
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    left: calc(50% - 0.5rem);
+    top: calc(50% - 0.5rem);
+  }
+  
+  .InputTodo {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    flex-grow: 1;
+  }
+  
+  .AddButton {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .AddButton:hover {
+    background-color: #45a049;
+  }
+
+  .TodoList {
+    list-style-type: none;
+    padding: 0;
+    height: 80%;
+  }
+
+  .TodoList::-webkit-scrollbar-thumb{
+    height: 5px;
+  }
+ 
+  
+  .TodoItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    min-width: 300px;
+  }
+  
+  .TodoActions button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .TodoActions button:hover {
+    background-color: #ddd;
+  }
+
+  .text_color{
+    color:black;
+    font-weight: 500;
+    font-size: medium;
+    text-transform: capitalize;
+  }
+
+  .d_flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2px;
+    align-items: center;
+    height: 100%;
+  }
+
+  .d_flex h2{
+    height: 20%;
+  }
+
+  .LeftPanelContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .Counter {
+    margin-bottom: 20px;
+  }
+  
+  .Counter h2 {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  
+  .Counter span {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
